@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>소개 페이지</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+
+
+
+    <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-storage.js"></script> 
+
+    <script>
+        /* 파이어베이스 프로젝트 설정 內 내 앱 */
+        const firebaseConfig = {
+            apiKey: "AIzaSyAkxep9jM-FpeZmEzaHlJuhiiQNEHb_HOk",
+            authDomain: "semiproject6.firebaseapp.com",
+            databaseURL: "https://semiproject6-default-rtdb.asia-southeast1.firebasedatabase.app",
+            projectId: "semiproject6",
+            storageBucket: "semiproject6.appspot.com",
+            messagingSenderId: "300720308935",
+            appId: "1:300720308935:web:09cbe5d14559220c0cb4e2"
+        };
+        /* 파이어베이스 프로젝트 설정 內 내 앱 끝*/
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        
+    </script>
+
+
+
+
+<script>
+    $(document).ready(function(){
+      $('.slider').bxSlider();
+      $('.gallery').bxSlider({
+        mode:"fade",
+        auto:true
+    });
+    });
+  </script>
+
+</head>
+<body>
+
+<div class="slider">
+    <div>Terr GYM 문의사항이 있으시면 연락주세요</div>
+    <div>터짐 전화번호 010-1234-5678</div>
+  </div>
+
+
+
+<ul class="gallery">
+    <li>
+        <a href="#">
+            <img src="images/img1.jpg" alt="" width="100%" height="600">
+        </a>
+    </li>
+    <li>
+        <a href="#">
+            <img src="images/img2.jpg" alt="" width="100%" height="600">
+        </a>
+    </li>
+    <li>
+        <a href="#">
+            <img src="images/img3.jpg" alt="" width="100%" height="600">
+        </a>
+    </li>
+</ul>
+
+이쪽에 소개 하는 거
+
+
+
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script> -->
+</body>
+</html>
